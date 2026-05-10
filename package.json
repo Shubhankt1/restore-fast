@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "npm run test:unit && npm run typecheck",
     "test:unit": "node --test __tests__/punchlist-domain.test.mjs",
+    "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio"

@@ -23,7 +23,6 @@ export async function uploadPunchItemPhoto(input: {
   file: File;
 }): Promise<string> {
   const { supabaseUrl, anonKey, bucket } = requireStorageEnv();
-  console.log("KEY PREFIX:", anonKey.slice(0, 10), "LENGTH:", anonKey.length);
   const client = createClient(supabaseUrl, anonKey);
   const extension = input.file.name.includes(".")
     ? input.file.name.slice(input.file.name.lastIndexOf(".")).toLowerCase()
