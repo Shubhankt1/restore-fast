@@ -47,18 +47,15 @@ The brief rewards a tight scope filter more than a long feature list. Things I c
 - **Worker table.** `assignedTo` stays free text until there's a real reason for normalization. Promoting later is a one-table migration plus a foreign key.
 - **Bulk operations.** A real superintendent walking a unit closes 15 items at once. Out of scope for v1, obvious v2.
 - **Offline / PWA.** Construction sites have terrible signal. A production app would queue mutations locally and sync when connectivity returns.
-- **CSV / PDF export.** Closeout packages in this industry are spreadsheets and PDFs. Easy add later, not load-bearing for the demo.
 - **Real-time updates.** Supabase has Realtime built in, but two crews on the same punch list at the same time isn't a v1 problem.
 - **Notifications.** SMS to assignees on item creation, email digests, and so on. The Twilio integration is in the JD's stack list; adding it without a clear trigger would be the "overbuilt for what the user needs" anti-pattern called out in the brief.
 
 ## What's next, in order
 
-1. Deploy and publish the live URL.
-2. Auth + per-project RLS.
-3. Direct-to-Storage photo uploads via presigned URLs (removes the 1 MB cap).
-4. Bulk close action on the project detail page.
-5. CSV export of items grouped by location.
-6. Promote `assignedTo` to a `Worker` table.
+1. Auth + per-project RLS.
+2. Direct-to-Storage photo uploads via presigned URLs (removes the 1 MB cap).
+3. Bulk close action on the project detail page.
+4. Promote `assignedTo` to a `Worker` table.
 
 ## Local development
 
